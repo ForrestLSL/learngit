@@ -46,3 +46,12 @@ git checkout -b dev  相当于 git branch dev  和 git checkout dev
 查看分支合并情况：git log —graph —-pretty=oneline —-abbrev-commit
 
 合并分支的时保留记录 git merge —no-ff -m “合并信息” <name>
+
+
+查看存储的工作空间 git stash list
+
+恢复存储的工作空间 git stash apply 
+
+删除stash存储空间的内容 git stash drop
+
+恢复工作空间同时把stash内容也删除 git stash pop 
