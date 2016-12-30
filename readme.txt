@@ -48,10 +48,11 @@ git checkout -b dev  相当于 git branch dev  和 git checkout dev
 合并分支的时保留记录 git merge —no-ff -m “合并信息” <name>
 
 
+储存工作空间 git stash 
 查看存储的工作空间 git stash list
-
-恢复存储的工作空间 git stash apply 
-
+恢复存储的工作空间 git stash apply <name> //如果有多个stash 可以检出指定的stash
 删除stash存储空间的内容 git stash drop
+恢复工作空间同时把stash内容也删除 git stash pop //如果stash多的话就还可以先list 然后检出
 
-恢复工作空间同时把stash内容也删除 git stash pop 
+
+
