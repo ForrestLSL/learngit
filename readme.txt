@@ -43,4 +43,4 @@ git checkout -b dev  相当于 git branch dev  和 git checkout dev
 合并某分支到当前分支 git merge <name>
 删除分支 git branch -d <name>
 
-Create a new Branch is quick & simple
+查看分支合并情况：git log —graph —-pretty=oneline —-abbrev-commit
