@@ -44,3 +44,5 @@ git checkout -b dev  相当于 git branch dev  和 git checkout dev
 删除分支 git branch -d <name>
 
 查看分支合并情况：git log —graph —-pretty=oneline —-abbrev-commit
+
+合并分支的时保留记录 git merge —no-ff -m “合并信息” <name>
