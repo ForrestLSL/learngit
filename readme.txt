@@ -54,5 +54,15 @@ git checkout -b dev  相当于 git branch dev  和 git checkout dev
 删除stash存储空间的内容 git stash drop
 恢复工作空间同时把stash内容也删除 git stash pop //如果stash多的话就还可以先list 然后检出
 
+强制删除分支命令 git branch -D <name> //强制删除某个分支
+
+查看远程库信息 git remote
+查看远程库更详细的信息 git remote -v
+推送到远程分支 git push origin <name> 
+抓取远程分支 git pull
+将本地分支和远程分支关联 git branch —set-upstream branch-name origin/branch-name
+在本地创建和远程分支对应的分支 git checkout -b branch-name origin/branch-name //本地和远程分支的名称最好一致
+
+
 
 
